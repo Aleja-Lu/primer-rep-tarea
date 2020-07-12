@@ -1,0 +1,116 @@
+
+@font-face{
+    font-family: raissone;
+    src: url(../fuentes/Raisonne\ DemiBold/RaisonneDemiBold.ttf);
+    font-weight: lighter;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family:raisonne;
+
+}
+
+img{
+    max-width: 100%;
+
+}
+/*barras navegacion*/
+
+.navbar{
+    background-color: #a0af22;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    position: sticky;
+    
+}
+
+.nav1{
+    list-style: none;
+    display: flex;
+    font-size:x-small;
+    position: sticky;
+    
+}
+ 
+.menu1{
+    text-decoration: none;
+    display: block;
+    padding: 0,2em;
+    color: black;
+    
+}
+
+.submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+
+    position: absolute;
+ 
+}
+.menu-item:hover>.submenu{
+    display: block;
+    background-color: #ffff89;
+}
+
+.menu-item:hover{
+    background-color: #d4e157;
+}
+
+.menu1:hover{
+    background-color: #a0af22;
+    color:#ffff89 ;
+    
+}
+
+.main-footer{
+    background-color:#a0af22;
+    padding: 1em; 
+}
+
+.menu2{
+    color: black;   
+    font-size: large;
+}
+
+.menu2:hover{
+  
+    color:#ffff89;
+  
+}
+/*header*/
+
+.main-header{
+    background-color:white;
+    color:#99aa00;
+    height: 30%;
+    text-align: center;
+    padding: 2em;
+    
+
+}
+h1{
+    font-size: 30px;
+    padding: 1em;
+}
+
+.uno{
+    margin: auto;
+    
+}
+
+.grid1{
+    width: 100%;
+}
+
+.imag-general{
+    width: 100%;
+    height: auto;
+    
+}
