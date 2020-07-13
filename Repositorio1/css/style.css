@@ -1,4 +1,3 @@
-
 @font-face{
     font-family: raissone;
     src: url(../fuentes/Raisonne\ DemiBold/RaisonneDemiBold.ttf);
@@ -11,32 +10,44 @@
     margin: 0 auto;
     padding: 0;
     font-family:raisonne;
-
 }
 
 img{
-    max-width: 100%;
+    max-width: 80%;
+    border-radius: 60%;
+    box-shadow: 10px -5px 5px 5px #ccdb37; 
 
+    position: relative;
+
+    animation-name: fotos;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-duration: 3s; 
+    
 }
+
+.silla{
+    width: 60vw;
+}
+
+
 /*barras navegacion*/
 
 .navbar{
     background-color: #a0af22;
     margin: 0;
-    padding: 0;
-    text-align: left;
+    padding: 2vh;
     position: sticky;
-    
+   
 }
 
 .nav1{
     list-style: none;
     display: flex;
-    font-size:x-small;
-    position: sticky;
-    
+    font-size:small;
+   
+
 }
- 
 .menu1{
     text-decoration: none;
     display: block;
@@ -80,37 +91,104 @@ img{
 }
 
 .menu2:hover{
-  
     color:#ffff89;
-  
 }
 /*header*/
 
 .main-header{
     background-color:white;
     color:#99aa00;
-    height: 30%;
     text-align: center;
-    padding: 2em;
-    
-
-}
-h1{
-    font-size: 30px;
     padding: 1em;
+
+    animation-name:animacion-titulo;
+    animation-delay: 200ms;
+    animation-duration: 2s;   
+}
+.h1{
+    font-weight: bolder;
+    font: size 50px;
 }
 
+h3{
+    padding:0,5em;
+    background-color:#ccdb37; 
+    font: size 14px;;
+    font-stretch: extra-expanded;  
+     
+    position: relative;
+    top: -50%;
+}
+
+.titulo-diseño{
+
+    padding:0,5em;
+    background-color:#ccdb37; 
+    font: size 14px;;
+    font-stretch: extra-expanded;  
+     
+    position: relative;
+    top: -50%;
+}
+
+.seccion{
+    text-decoration: none;
+    color: black;
+    transition: 1s ;
+}
+.seccion:hover{
+    color:#ffff6c;
+    background-color: black;
+  
+}
 .uno{
-    margin: auto;
-    
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  
+}
+/*main contain*/
+
+
+
+/*animaciones*/
+@keyframes animacion-titulo{
+    from{ 
+        background-color: #98aa00;
+        color:#ffff6c ;
+    }
+    to{
+       background-color: #f9fbe7;
+       color: #c6c8b5;
+    }
 }
 
-.grid1{
-    width: 100%;
-}
 
-.imag-general{
-    width: 100%;
-    height: auto;
-    
+@keyframes fotos{
+    0%{ 
+        top:0% ;
+        box-shadow: 10px -5px 5px 5px #ccdb37;
+       } 
+    20%{
+        top: 20%;
+        box-shadow: 30px -25px 5px 5px #4a5018;
+    }
+    40 %{
+        top: 10%;
+        box-shadow: 20px -15px 5px 5px #4f551c; 
+    }
+    60%{
+        top:0%;
+        box-shadow: 10px -5px 5px 5px #ccdb37; 
+        
+    }
+    80%{
+        top:10% ; 
+        box-shadow: 30px -25px 5px 5px #4a5018;
+    }
+    100%{
+        top:0%;
+        box-shadow:10px -5px 5px 5px #ccdb37; 
+    }
+   
 }

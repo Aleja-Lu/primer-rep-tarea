@@ -3,10 +3,10 @@ body{
     margin: 0 auto;
 
     grid-template-areas: 
-    "nav    nav"
-    "header header"
-    "content content"
-    "footer footer";
+    "nav    "
+    "header "
+    "content"
+    "footer";
 }
 
 .grid-content{
@@ -14,17 +14,16 @@ body{
     grid-template-columns: 3, 1fr;
 }
 
-.grid1{
+.box1{
     grid-row: 1 / 2;
     grid-column: 1/ 2;
 }
-.grid2{
+.box2{
     grid-row: 2 / 3;
     grid-column: 2/ 3;
 }
-.grid3{
+.box3{
     grid-row:  1/ 2;
     grid-column:3 / 4;
 }
 
-}
